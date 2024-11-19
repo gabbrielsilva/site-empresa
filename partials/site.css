@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #1b1b1b;
+    border-bottom: 1px solid #333;
+}
+
+.linha {
+    padding: 100px 20px;
+    background-color: #1b1b1b;
+    border-bottom: 1px solid #333;
+}
+
+.header h1 {
+    font-size: 3.5em;
+    color: #d4af37;
+    margin: 0;
+    animation: fadeIn 1s ease-in;
+}
+
+.header p {
+    font-size: 1.6em;
+    color: #b3b3b3;
+    margin: 10px 0 30px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+    font-size: 2.8em;
+    color: #d4af37;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #d4af37;
+    margin: 8px auto 0;
+    animation: growLine 1s ease-in-out;
+}
+
+/* Seção Porque Contratar a Gente */
+.why-hire {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 60px 20px;
+    min-height: 600px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.why-hire h2 {
+    font-size: 2.8em;
+    color: #d4af37;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.why-hire h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #d4af37;
+    margin: 8px auto 0;
+    animation: growLine 1s ease-in-out;
+}
+
+.why-hire p {
+    font-size: 1.5em;
+    color: #b3b3b3;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.why-hire ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 60px;
+    font-size: 1.6em;
+    color: #b3b3b3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why-hire ul li {
+    margin-bottom: 20px;
+    background: linear-gradient(145deg, #242424, #1a1a1a);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px #0f0f0f, -10px -10px 20px #2f2f2f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px;
+    width: 100%;
+    animation: fadeInUp 1s ease-out;
+}
+
+.why-hire ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 12px 12px 25px #0a0a0a, -12px -12px 25px #333333;
+}
+
+/* Content Box Hover Effect */
+.content-box:hover {
+    transform: scale(1.05);
+    box-shadow: 12px 12px 25px #0a0a0a, -12px -12px 25px #333333;
+}
+
+.content-box {
+    background: linear-gradient(145deg, #242424, #1a1a1a);
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    color: #b3b3b3;
+    box-shadow: 10px 10px 20px #0f0f0f, -10px -10px 20px #2f2f2f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.content-box h3 {
+    color: #d4af37;
+    font-size: 1.6rem;
+}
+
+.content-box p {
+    font-size: 1.6rem;
+}
+
+/* O que fazemos */
+.what-we-do {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 60px 20px;
+}
+
+.what-we-do h3 {
+    color: #d4af37;
+}
+
+.what-we-do h2 {
+    font-size: 2.8em;
+    color: #d4af37;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.what-we-do h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #d4af37;
+    margin: 8px auto 0;
+    animation: growLine 1s ease-in-out;
+}
+
+.what-we-do p {
+    color: #b3b3b3;
+    margin-top: 20px;
+}
+
+.what-we-do .content-box {
+    background: linear-gradient(145deg, #242424, #1a1a1a);
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    color: #b3b3b3;
+    box-shadow: 10px 10px 20px #0f0f0f, -10px -10px 20px #2f2f2f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.what-we-do .content-box:hover {
+    transform: scale(1.05);
+    box-shadow: 12px 12px 25px #0a0a0a, -12px -12px 25px #333333;
+}
+
+/* Perguntas Frequentes */
+.faq-section {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 60px 20px;
+}
+
+.faq-item {
+    background: linear-gradient(145deg, #242424, #1a1a1a);
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    color: #b3b3b3;
+    box-shadow: 10px 10px 20px #0f0f0f, -10px -10px 20px #2f2f2f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item h3 {
+    color: #d4af37;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.6em;
+}
+
+.faq-item:hover {
+    transform: scale(1.05);
+    box-shadow: 12px 12px 25px #0a0a0a, -12px -12px 25px #333333;
+}
+
+/* Tecnologias */
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    color: #d4af37;
+    font-size: 2em;
+    padding-top: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Estilo da seção de contato */
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #000;
+    color: #d4af37;
+    padding: 20px;
+}
+
+#contato h2 {
+    color: #d4af37;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+#contato p,
+#contato a {
+    max-width: 1120px;
+    color: #b3b3b3;
+    font-size: 1.6em;
+    animation: fadeInUp 1s ease-out;
+    text-align: center;
+}
+
+#contato a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+#contato a:hover {
+    color: #ffffff;
+}
+
+/* Estilo dos itens de contato */
+.contato-item {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+/* Formulário de Contato */
+form#contato-form input,
+form#contato-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #b3b3b3;
+    font-size: 1.6em;
+    animation: fadeInUp 1s ease-out;
+}
+
+form#contato-form input::placeholder,
+form#contato-form textarea::placeholder {
+    color: #666;
+}
+
+form#contato-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d4af37;
+    color: #1b1b1b;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s;
+    animation: fadeIn 1.5s ease-in;
+}
+
+form#contato-form button:hover {
+    background-color: #b3b3b3;
+    color: #1b1b1b;
+}
+
+/* Media Queries */
+
+@media (max-width: 1280px) {
+    /* Laptops e telas grandes */
+    .header h1 {
+        font-size: 3em;
+    }
+    .header p {
+        font-size: 1.4em;
+    }
+    .why-hire ul li,
+    .content-box {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Tablets pequenos */
+    .header h1 {
+        font-size: 2.8em;
+    }
+    section h2 {
+        font-size: 2.6em;
+    }
+    .why-hire h2 {
+        font-size: 2.5em;
+    }
+
+    form#contato-form input,
+    form#contato-form textarea {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Tablets e celulares pequenos */
+    .header h1 {
+        font-size: 2.5em;
+    }
+    section h2 {
+        font-size: 2.2em;
+    }
+    .why-hire ul li {
+        font-size: 1.2em;
+    }
+    .content-box h3 {
+        font-size: 1.4rem;
+    }
+    form#contato-form input,
+    form#contato-form textarea {
+        font-size: 1em;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Celulares pequenos */
+    .header h1 {
+        font-size: 2em;
+    }
+    section h2 {
+        font-size: 1.8em;
+    }
+    .why-hire ul li {
+        font-size: 1.2em;
+    }
+    .content-box h3 {
+        font-size: 1.2rem;
+    }
+    #contato h2 {
+        font-size: 2em;
+    }
+    form#contato-form input,
+    form#contato-form textarea {
+        font-size: 0.9em;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Dispositivos móveis menores */
+    .header h1 {
+        font-size: 1.8em;
+    }
+    .header p {
+        font-size: 1em;
+    }
+    section h2 {
+        font-size: 1.5em;
+    }
+    .content-box h3 {
+        font-size: 1rem;
+    }
+    #contato h2 {
+        font-size: 1.8em;
+    }
+}
+
