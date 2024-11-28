@@ -292,6 +292,10 @@ h2::after {
     margin: 5px 0;
 }
 
+.form {
+    display: none;
+}
+
 /* Formulário de Contato */
 form#contato-form input,
 form#contato-form textarea {

@@ -145,6 +145,7 @@ h1 {
     letter-spacing: 2px;
 }
 
+
 h2::after {
     content: "";
     display: block;
