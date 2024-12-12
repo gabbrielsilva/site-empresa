@@ -24,7 +24,8 @@ async function enviarFormulario() {
     const mensagem = document.getElementById("mensagem").value;
 
     try {
-        const response = await fetch('http://localhost:3000/enviar-formulario', {
+        // Substitua pela URL do seu backend no Render
+        const response = await fetch('hhttps://empresa-jdj6.onrender.com/', {  // URL pública do seu backend no Render
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -3,23 +3,25 @@ const cors = require('cors');
 const mysql = require('mysql2');
 require('dotenv').config();
 
-
 // Criar aplicação express
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Usar o CORS
-app.use(cors());
+// Usar o CORS (configure para aceitar o frontend do Vercel)
+app.use(cors({
+    origin: 'https://assistenciadigitaljg.vercel.app/', // Substitua pela URL do seu frontend no Vercel
+}));
 
 // Conectar ao MySQL
-const connection = mysql.createConnection({
+const db = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
 });
 
-db.connect((err) => {
+// Teste de conexão com o banco de dados
+connection.connect((err) => {
     if (err) {
         console.error('Erro de conexão ao MySQL:', err);
         return;
@@ -35,7 +37,7 @@ app.post('/contato', (req, res) => {
     const { nome, email, telefone, mensagem } = req.body;
 
     const query = 'INSERT INTO contatos (nome, email, telefone, mensagem) VALUES (?, ?, ?, ?)';
-    db.query(query, [nome, email, telefone, mensagem], (err, result) => {
+    connection.query(query, [nome, email, telefone, mensagem], (err, result) => { // Alterei db.query para connection.query
         if (err) {
             console.error('Erro ao inserir dados:', err);
             return res.status(500).json({ error: 'Erro ao salvar os dados' });
