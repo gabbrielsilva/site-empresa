@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 
 // Conectar ao MySQL
-const connection = mysql.createConnection({
+const db = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
